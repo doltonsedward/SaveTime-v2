@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { SLIDER_DATA } from "../config/constant";
-import { BORDER_TRENDY, ITEM_WIDTH, width, SPACING } from "../config/theme";
+import { BORDER_TRENDY, width, SPACING } from "../config/theme";
 
 export default function HeaderSlide() {
   return (
@@ -9,7 +9,7 @@ export default function HeaderSlide() {
       keyExtractor={(item) => item.color}
       horizontal
       contentContainerStyle={{
-        padding: SPACING,
+        marginTop: 20,
       }}
       decelerationRate={"fast"}
       renderItem={({ item }) => {
