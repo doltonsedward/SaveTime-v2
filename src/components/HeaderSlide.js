@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { SLIDER_DATA } from "../config/constant";
-import { BORDER_TRENDY, width, SPACING } from "../config/theme";
+import { BORDER_CIRCLE, width, SPACING } from "../config/theme";
 
 export default function HeaderSlide() {
   return (
@@ -26,9 +26,7 @@ export default function HeaderSlide() {
 
 const styles = StyleSheet.create({
   itemContainer: {
-    width: width,
-    height: width / 2,
-    borderRadius: BORDER_TRENDY,
+    borderRadius: BORDER_CIRCLE,
     margin: 5,
     padding: SPACING,
   },
