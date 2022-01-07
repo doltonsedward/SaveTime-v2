@@ -4,8 +4,16 @@ import HeaderSlide from "../components/HeaderSlide";
 export default function Home() {
   return (
     <View>
+      <Text style={styles.title}>Choose what</Text>
+      <Text>to learn today</Text>
       <HeaderSlide />
-      <Text>Halo dunia</Text>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 25,
+    fontWeight: "bold",
+  },
+});
