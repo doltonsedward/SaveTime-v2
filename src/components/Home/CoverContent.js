@@ -1,4 +1,6 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+
+const boxWidth = 500;
 
 export default function CoverContent() {
   return (
@@ -10,6 +12,6 @@ export default function CoverContent() {
 
 const styles = StyleSheet.create({
   container: {
-    width: 500,
+    backgroundColor: "lightblue",
   },
 });
