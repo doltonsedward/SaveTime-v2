@@ -1,19 +1,29 @@
 import { StyleSheet, Text, View } from "react-native";
 import HeaderSlide from "../components/HeaderSlide";
+import { SPACING } from "../config/theme";
+
+const fontSize = 25;
 
 export default function Home() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.title}>Choose what</Text>
-      <Text>to learn today</Text>
+      <Text style={styles.subTitle}>to learn today</Text>
       <HeaderSlide />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    padding: SPACING,
+  },
   title: {
-    fontSize: 25,
+    fontSize,
+    // fontFamily: "Poppins",
     fontWeight: "bold",
+  },
+  subTitle: {
+    fontSize,
   },
 });
