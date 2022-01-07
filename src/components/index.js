@@ -1,3 +1,1 @@
-import HeaderSlide from "./Home/HeaderSlide";
-
-export { HeaderSlide };
+export * from "./Home";
