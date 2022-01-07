@@ -7,4 +7,10 @@ const SLIDER_DATA = [
   { title: "Make your life easy", color: "#80004f" },
 ];
 
-export { SLIDER_DATA };
+const second = 60;
+const RECOMENDED_DATA = [
+  { id: 1, title: "Chatting", time: second * 5 },
+  { id: 2, title: "Listen", time: second * 5 },
+];
+
+export { SLIDER_DATA, RECOMENDED_DATA };
