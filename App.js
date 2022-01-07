@@ -9,6 +9,7 @@ import Loading from "./src/screens/Loading";
 export default function App() {
   let [fontsLoaded] = useFonts({
     Inter_900Black,
+    Poppins: require("./src/assets/font/Poppins-Medium.ttf"),
   });
 
   if (!fontsLoaded) {
@@ -27,6 +28,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    fontFamily: "Inter_900Black",
   },
 });
