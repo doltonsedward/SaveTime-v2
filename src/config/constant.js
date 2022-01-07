@@ -1,6 +1,10 @@
 const SLIDER_DATA = [
-  { id: 1, title: "How to do", color: "lightblue" },
-  { id: 2, title: "Make your life easy", color: "red" },
+  { title: "How to do", color: "lightblue" },
+  { title: "Make your life easy", color: "red" },
+  { title: "How to do", color: "orange" },
+  { title: "Make your life easy", color: "maroon" },
+  { title: "How to do", color: "purple" },
+  { title: "Make your life easy", color: "blue" },
 ];
 
 export { SLIDER_DATA };
