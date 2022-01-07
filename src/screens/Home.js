@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import HeaderSlide from "../components/HeaderSlide";
+import { HeaderSlide } from "../components";
 import { SPACING } from "../config/theme";
 
 const fontSize = 25;
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize,
-    // fontFamily: "Poppins",
+    fontFamily: "Poppins",
     fontWeight: "bold",
   },
   subTitle: {
