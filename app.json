@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "todo-app",
-    "slug": "todo-app",
+    "name": "SaveTime v2",
+    "slug": "savetime",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
