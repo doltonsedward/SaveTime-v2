@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { HeaderSlide } from "../components";
+import { HeaderSlide, CoverContent } from "../components/";
 import { SPACING } from "../config/theme";
 
 const fontSize = 25;
@@ -10,6 +10,7 @@ export default function Home() {
       <Text style={styles.title}>Choose what</Text>
       <Text style={styles.subTitle}>to learn today</Text>
       <HeaderSlide />
+      <CoverContent />
     </View>
   );
 }
