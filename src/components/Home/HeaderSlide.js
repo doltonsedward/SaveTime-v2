@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import { SLIDER_DATA } from "../config/constant";
-import { BORDER_CIRCLE } from "../config/theme";
+import { SLIDER_DATA } from "../../config/constant";
+import { BORDER_CIRCLE } from "../../config/theme";
 
 export default function HeaderSlide() {
   return (
