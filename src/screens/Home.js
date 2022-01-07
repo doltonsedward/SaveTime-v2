@@ -1,8 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import { HeaderSlide, CoverContent } from "../components/";
-import { SPACING } from "../config/theme";
-
-const fontSize = 25;
+import { fontSize, padding } from "../config/theme";
 
 export default function Home() {
   return (
@@ -17,7 +15,7 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: SPACING,
+    padding: padding,
   },
   title: {
     fontSize,
