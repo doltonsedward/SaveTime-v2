@@ -5,8 +5,8 @@ import { fontSize, padding } from "../config/theme";
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Choose what</Text>
-      <Text style={styles.subTitle}>to learn today</Text>
+      <Text style={styles.title}>Save your time</Text>
+      <Text style={styles.subTitle}>now</Text>
       <HeaderSlide />
       <CoverContent />
     </View>
