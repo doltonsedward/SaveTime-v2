@@ -11,6 +11,7 @@ const FONT = "Poppins";
 const theme = {
   main: {
     color: "blue",
+    font: FONT,
   },
 };
 
