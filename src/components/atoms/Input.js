@@ -1,5 +1,21 @@
 import { useState } from "react";
-import { StyleSheet, TextInput, View } from "react-native";
+import styled from "styled-components/native";
+
+const Container = styled.View`
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+`;
+
+const Input = styled.TextInput`
+  padding: 10px 20px;
+  width: 270px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 25px;
+`;
 
 export default function InputTodo({ placeholder }) {
   const [textInput, setTextInput] = useState("");
@@ -10,32 +26,13 @@ export default function InputTodo({ placeholder }) {
   // }
 
   return (
-    <View style={styles.container}>
-      <TextInput
-        style={styles.input}
+    <Container>
+      <Input
         placeholder={placeholder}
         value={textInput}
         onChangeText={setTextInput}
         onSubmitEditing={setSubmitValue}
       />
-    </View>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    justifyContent: "center",
-    position: "absolute",
-    bottom: 10,
-    left: 0,
-    right: 0,
-  },
-  input: {
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    width: 270,
-    backgroundColor: "#FFF",
-    borderRadius: 25,
-  },
-});
