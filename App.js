@@ -4,7 +4,8 @@ import { Inter_900Black } from "@expo-google-fonts/inter";
 
 import Home from "./src/screens/Home";
 import Loading from "./src/screens/Loading";
-import styled from "styled-components/native";
+import styled, { ThemeProvider } from "styled-components/native";
+import { theme } from "./src/config/theme";
 
 const Container = styled.SafeAreaView`
   flex: 1;
@@ -23,8 +24,10 @@ export default function App() {
 
   return (
     <Container>
-      <StatusBar style="auto" />
-      <Home />
+      <ThemeProvider theme={theme}>
+        <StatusBar style="auto" />
+        <Home />
+      </ThemeProvider>
     </Container>
   );
 }
