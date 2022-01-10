@@ -7,8 +7,8 @@ import Loading from "./src/screens/Loading";
 import styled from "styled-components/native";
 
 const Container = styled.SafeAreaView`
+  flex: 1;
   background-color: #e1e2e7;
-  height: 100vh;
 `;
 
 export default function App() {
