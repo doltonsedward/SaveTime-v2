@@ -1,30 +1,30 @@
-import { StyleSheet, Text, View } from "react-native";
-import { HeaderSlide, CoverContent, InputTodo } from "../components/";
+import { View } from "react-native";
+import { InputTodo } from "../components/";
 import { fontSize, padding } from "../config/theme";
+import styled from "styled-components/native";
+
+const Container = styled.View`
+  flex: 1;
+  padding: ${padding}px;
+`;
+
+const Title = styled.Text`
+  font-size: ${fontSize}px;
+  font-family: ${({ theme }) => theme.main.font};
+`;
+
+const Subtitle = styled.Text`
+  font-size: ${fontSize}px;
+`;
 
 export default function Home() {
   return (
-    <View style={styles.container}>
+    <Container>
       <View>
-        <Text style={styles.title}>Save your time</Text>
-        <Text style={styles.subTitle}>now</Text>
+        <Title className="title">Save your time</Title>
+        <Subtitle>now</Subtitle>
       </View>
       <InputTodo placeholder="Write text here" />
-    </View>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: padding,
-    flex: 1,
-  },
-  title: {
-    fontSize,
-    fontFamily: "Poppins",
-    fontWeight: "bold",
-  },
-  subTitle: {
-    fontSize,
-  },
-});
