@@ -1,4 +1,3 @@
-import HeaderSlide from "./HeaderSlide";
-import CoverContent from "./CoverContent";
+import RecomendedList from "./RecomendedList";
 
-export { HeaderSlide, CoverContent };
+export { RecomendedList };

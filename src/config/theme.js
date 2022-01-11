@@ -8,7 +8,15 @@ const BORDER_TRENDY = 8;
 const BORDER_CIRCLE = 50;
 const FONT = "Poppins";
 
+const theme = {
+  main: {
+    color: "blue",
+    font: FONT,
+  },
+};
+
 export {
+  theme,
   width,
   fontSize,
   padding,
